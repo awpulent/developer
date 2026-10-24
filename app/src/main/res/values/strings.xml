@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlashRev</string>
+    <string name="tagline">A four-key rhythm game</string>
+
+    <!-- Title screen -->
+    <string name="play">Play</string>
+    <string name="import_songs">Import songs</string>
+    <string name="settings">Settings</string>
+    <string name="calibrate">Calibrate offset</string>
+    <string name="preparing_demo">Preparing demo song…</string>
+
+    <!-- Song select -->
+    <string name="song_select">Song select</string>
+    <string name="no_songs">No songs found.\n\nUse “Import songs” on the title screen to add StepMania (.sm / .ssc) song folders or a .zip pack.</string>
+    <string name="import_folder">Import a song folder</string>
+    <string name="import_zip">Import a .zip pack</string>
+    <string name="import_cancel">Cancel</string>
+    <string name="import_title">Import songs</string>
+    <string name="import_message">Pick a folder that contains StepMania songs (each song in its own folder with a .sm or .ssc file and its audio), or a .zip of such folders.</string>
+    <string name="import_done">Imported %1$d song(s)</string>
+    <string name="import_none">No playable songs were found in that selection.</string>
+    <string name="import_failed">Import failed: %1$s</string>
+    <string name="importing">Importing…</string>
+    <string name="delete_song">Delete song</string>
+    <string name="delete_song_confirm">Remove “%1$s” from your library? This deletes the imported copy.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="best_score">Best: %1$s</string>
+    <string name="no_score">Not played yet</string>
+    <string name="notes_count">%1$d notes</string>
+    <string name="difficulty_meter">%1$s %2$d</string>
+
+    <!-- Gameplay -->
+    <string name="pause">Pause</string>
+    <string name="paused">Paused</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+    <string name="quit">Quit</string>
+    <string name="song_load_failed">Could not load the song: %1$s</string>
+
+    <!-- Results -->
+    <string name="results">Results</string>
+    <string name="amazing">Amazing</string>
+    <string name="perfect">Perfect</string>
+    <string name="good">Good</string>
+    <string name="average">Average</string>
+    <string name="miss">Miss</string>
+    <string name="boo">Boo</string>
+    <string name="raw_score">Raw score</string>
+    <string name="score">Score</string>
+    <string name="max_combo">Max combo</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="new_best">New best!</string>
+    <string name="retry">Retry</string>
+    <string name="back_to_songs">Song select</string>
+    <string name="rank_aaa">AAA</string>
+    <string name="rank_sdg">SDG</string>
+    <string name="rank_fc">FC</string>
+    <string name="rank_blackflag">Blackflag FC</string>
+    <string name="rank_clear">Clear</string>
+
+    <!-- Settings -->
+    <string name="setting_scroll_speed">Scroll speed</string>
+    <string name="setting_scroll_speed_desc">How fast arrows travel. Higher is faster.</string>
+    <string name="setting_scroll_direction">Scroll direction</string>
+    <string name="setting_scroll_up">Up (arrows rise to the top, FFR style)</string>
+    <string name="setting_scroll_down">Down (arrows fall to the bottom)</string>
+    <string name="setting_offset">Global offset</string>
+    <string name="setting_offset_desc">Positive values make notes later relative to the music. Use Calibrate to measure this automatically.</string>
+    <string name="setting_offset_value">%1$d ms</string>
+    <string name="setting_hit_sounds">Hit sounds</string>
+    <string name="setting_hit_sounds_desc">Play a click when you hit a note.</string>
+    <string name="setting_early_late">Show early / late</string>
+    <string name="setting_early_late_desc">Show a small early/late indicator under the judgment.</string>
+    <string name="setting_snap_colors">Colour notes by rhythm</string>
+    <string name="setting_snap_colors_desc">Red 4ths, blue 8ths, purple 12ths, yellow 16ths…</string>
+    <string name="setting_lane_width">Lane size</string>
+    <string name="setting_lane_width_desc">Width of the four arrow columns.</string>
+    <string name="setting_reset">Reset to defaults</string>
+    <string name="speed_value">%1$.1fx</string>
+    <string name="percent_value">%1$d%%</string>
+
+    <!-- Calibration -->
+    <string name="calibration_title">Offset calibration</string>
+    <string name="calibration_instructions">Tap anywhere on the beat. Keep tapping for a dozen beats — the measured offset appears below. Press Save when the number settles.</string>
+    <string name="calibration_measured">Measured offset: %1$d ms (%2$d taps)</string>
+    <string name="calibration_waiting">Waiting for taps…</string>
+    <string name="save">Save</string>
+    <plurals name="songs_in_library">
+        <item quantity="one">%d song in your library</item>
+        <item quantity="other">%d songs in your library</item>
+    </plurals>
+</resources>

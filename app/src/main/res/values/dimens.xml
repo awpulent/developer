@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="card_radius">14dp</dimen>
+    <dimen name="button_radius">12dp</dimen>
+</resources>

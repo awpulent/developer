@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.FlashRev.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minHeight="0dp"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:text="‹"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="@string/settings"
+                android:textAppearance="@style/TextAppearance.FlashRev.Title"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- Scroll speed -->
+        <LinearLayout style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsRow">
+                <TextView style="@style/SettingsTitle" android:text="@string/setting_scroll_speed" />
+                <TextView android:id="@+id/speed_value" style="@style/SettingsValue" />
+            </LinearLayout>
+            <TextView style="@style/SettingsDesc" android:text="@string/setting_scroll_speed_desc" />
+            <SeekBar
+                android:id="@+id/speed_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Direction -->
+        <LinearLayout style="@style/SettingsCard">
+            <TextView style="@style/SettingsTitle" android:text="@string/setting_scroll_direction" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/dir_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_scroll_up"
+                    android:textAppearance="@style/TextAppearance.FlashRev.Body" />
+                <RadioButton
+                    android:id="@+id/dir_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_scroll_down"
+                    android:textAppearance="@style/TextAppearance.FlashRev.Body" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Offset -->
+        <LinearLayout style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsRow">
+                <TextView style="@style/SettingsTitle" android:text="@string/setting_offset" />
+                <TextView android:id="@+id/offset_value" style="@style/SettingsValue" />
+            </LinearLayout>
+            <TextView style="@style/SettingsDesc" android:text="@string/setting_offset_desc" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/offset_minus"
+                    style="@style/Widget.FlashRev.Button"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:minHeight="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="−" />
+                <SeekBar
+                    android:id="@+id/offset_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/offset_plus"
+                    style="@style/Widget.FlashRev.Button"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:minHeight="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="+" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_calibrate"
+                style="@style/Widget.FlashRev.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/calibrate" />
+        </LinearLayout>
+
+        <!-- Lane width -->
+        <LinearLayout style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsRow">
+                <TextView style="@style/SettingsTitle" android:text="@string/setting_lane_width" />
+                <TextView android:id="@+id/lane_value" style="@style/SettingsValue" />
+            </LinearLayout>
+            <TextView style="@style/SettingsDesc" android:text="@string/setting_lane_width_desc" />
+            <SeekBar
+                android:id="@+id/lane_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Toggles -->
+        <LinearLayout style="@style/SettingsCard">
+            <Switch
+                android:id="@+id/hit_sounds"
+                style="@style/SettingsSwitch"
+                android:text="@string/setting_hit_sounds" />
+            <TextView style="@style/SettingsDesc" android:text="@string/setting_hit_sounds_desc" />
+            <Switch
+                android:id="@+id/early_late"
+                style="@style/SettingsSwitch"
+                android:layout_marginTop="12dp"
+                android:text="@string/setting_early_late" />
+            <TextView style="@style/SettingsDesc" android:text="@string/setting_early_late_desc" />
+            <Switch
+                android:id="@+id/snap_colors"
+                style="@style/SettingsSwitch"
+                android:layout_marginTop="12dp"
+                android:text="@string/setting_snap_colors" />
+            <TextView style="@style/SettingsDesc" android:text="@string/setting_snap_colors_desc" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="@style/Widget.FlashRev.Button.Danger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/setting_reset" />
+    </LinearLayout>
+</ScrollView>

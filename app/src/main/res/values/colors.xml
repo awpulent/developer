@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FF0B0D16</color>
+    <color name="bg_elevated">#FF151A2B</color>
+    <color name="bg_card">#FF1B2238</color>
+    <color name="divider">#FF2A3350</color>
+    <color name="text_primary">#FFF2F4FF</color>
+    <color name="text_secondary">#FF9AA3C7</color>
+    <color name="accent">#FFFFD040</color>
+    <color name="accent_dark">#FFC9A020</color>
+    <color name="accent_text">#FF14130A</color>
+    <color name="danger">#FFFF4C5B</color>
+
+    <!-- Judgment colours (FFR style) -->
+    <color name="judge_amazing">#FF60F0FF</color>
+    <color name="judge_perfect">#FFFFD040</color>
+    <color name="judge_good">#FF60E070</color>
+    <color name="judge_average">#FF8A8CFF</color>
+    <color name="judge_miss">#FFFF4C5B</color>
+    <color name="judge_boo">#FF9AA3C7</color>
+
+    <!-- Note colours by snap -->
+    <color name="note_4th">#FFFF4040</color>
+    <color name="note_8th">#FF4080FF</color>
+    <color name="note_12th">#FFC040FF</color>
+    <color name="note_16th">#FFFFE040</color>
+    <color name="note_24th">#FFFF80C0</color>
+    <color name="note_32nd">#FFFF9040</color>
+    <color name="note_48th">#FF40E0E0</color>
+    <color name="note_64th">#FF80FF80</color>
+    <color name="note_other">#FFC0C0C0</color>
+
+    <color name="ic_launcher_background">#FF0B0D16</color>
+</resources>
